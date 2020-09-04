@@ -131,7 +131,7 @@ enum emoticons {
 
 enum layer_names {
     _BASE,
-    _UNICODE,
+    _UNICODECHARS,
     _FN,
     _ADJUST
 };
@@ -173,7 +173,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |------+------+------+--------+------+------+------+------+------+------+------+------+------+------+-----------|
      * | 1    | 2    | 3    | Shift     | z    | x    | c    | v    | b    | n    | m    | ,(;) | .(:) | /    | Shift  |
      * |------+------+------+-----------+------+------+------+------+------+------+------+------+------+------+--------|
-     * | Ent  | 0    | .    | Ctrl   | Win    | Fn   | Alt  | Space       | MO(UNICODE)  | Left | Up   | Down | Right  |
+     * | Ent  | 0    | .    | Ctrl   | Win    | Fn   | Alt  | Space       | MO(UNICODECHARS)  | Left | Up   | Down | Right  |
      * `---------------------------------------------------------------------------------------------------------------'
      */
     [_BASE] = LAYOUT(
@@ -197,7 +197,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |      |      |      |        |        |      |      |             |              |      |      |      |        |
      * `---------------------------------------------------------------------------------------------------------------'
      */
-	[_UNICODE] = LAYOUT(
+	[_UNICODECHARS] = LAYOUT(
 		PLUSMINUS, _______, MULTIPLYX, OBELUS, POWER1, SFT_POW2, SFT_POW3, SFT_CENTS, SFT_PIPE, SFT_HYPHEN, SFT_TILDE, SFT_DEGREE, SFT_LSQBR, SFT_RSQBR, _______, _______,
 		_______, _______, _______, NOTEQUAL, _______, _______, _______, REGTM, TM, _______, MICRO, _______, SFT_RING_A, _______, _______, _______,
 		_______, _______, _______, _______, _______, _______, DELTA, _______, _______, HAMMER, _______, SFT_UML_O, SFT_UML_A, GRAVE, _______,
@@ -277,25 +277,25 @@ void eeconfig_init_keymap(void) {
 
 bool process_record_keymap(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case UNICODE:
+        case UNICODECHARS:
             if (record->event.pressed) {
-              layer_on(_UNICODE);
-              update_tri_layer(_UNICODE, _FN, _ADJUST);
+              layer_on(_UNICODECHARS);
+              update_tri_layer(_UNICODECHARS, _FN, _ADJUST);
             }
             else {
-              layer_off(_UNICODE);
-              update_tri_layer(_UNICODE, _FN, _ADJUST);
+              layer_off(_UNICODECHARS);
+              update_tri_layer(_UNICODECHARS, _FN, _ADJUST);
             }
             return false;
             break;
           case FN:
             if (record->event.pressed) {
               layer_on(_FN);
-              update_tri_layer(_UNICODE, _FN, _ADJUST);
+              update_tri_layer(_UNICODECHARS, _FN, _ADJUST);
             }
             else {
               layer_off(_FN);
-              update_tri_layer(_UNICODE, _FN, _ADJUST);
+              update_tri_layer(_UNICODECHARS, _FN, _ADJUST);
             }
             return false;
             break;

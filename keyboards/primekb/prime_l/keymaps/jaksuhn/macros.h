@@ -25,7 +25,7 @@ enum custom_keycodes {
   HALF, /* ½ */
   EMDASH, /* — */
   THREEQUARTERS, /* ¾ */
-  INFINITY, /* ∞ */
+  INFIN, /* ∞ */
   LCRBR, /* { */
   RCRBR, /* } */
   REGTM, /* ® */
