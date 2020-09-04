@@ -137,7 +137,7 @@ enum layer_names {
 };
 
 enum keymap_custom_keycodes {
-    RAISE = NEW_SAFE_RANGE,
+    RAISE = SAFE_RANGE,
     FN
 };
 

@@ -7,295 +7,295 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     #ifdef UNICODE_ENABLE
       case BANG: /* ‽ */
         if (record->event.pressed) {
-          send_unicode_hex_string("203D");
+          send_unicode_string("‽");
         }
         return false;
         break;
       case PLUSMINUS: /* ± */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B1");
+          send_unicode_string("±");
         }
         return false;
         break;
       case MULTIPLYX: /* × */
         if (record->event.pressed) {
-          send_unicode_hex_string("00D7");
+          send_unicode_string("×");
         }
         return false;
         break;
       case OBELUS: /* ÷ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00F7");
+          send_unicode_string("÷");
         }
         return false;
         break;
       case SQRT: /* √ */
         if (record->event.pressed) {
-          send_unicode_hex_string("221A");
+          send_unicode_string("√");
         }
         return false;
         break;
       case NOTEQUAL: /* ≠ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2260");
+          send_unicode_string("≠");
         }
         return false;
         break;
       case POWER1: /* ¹ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B9");
+          send_unicode_string("¹");
         }
         return false;
         break;
       case POWER2: /* ² */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B2");
+          send_unicode_string("²");
         }
         return false;
         break;
       case POWER3: /* ³ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B3");
+          send_unicode_string("³");
         }
         return false;
         break;
       case CENTS: /* ¢ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00A2");
+          send_unicode_string("¢");
         }
         return false;
         break;
       case PIPE: /* | */
         if (record->event.pressed) {
-          send_unicode_hex_string("007C");
+          send_unicode_string("|");
         }
         return false;
         break;
       case DASH: /* ‐ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2010");
+          send_unicode_string("‐");
         }
         return false;
         break;
       case DEGREE: /* ° */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B0");
+          send_unicode_string("°");
         }
         return false;
         break;
       case LSQBR: /* [ */
         if (record->event.pressed) {
-          send_unicode_hex_string("005B");
+          send_unicode_string("[");
         }
         return false;
         break;
       case RSQBR: /* ] */
         if (record->event.pressed) {
-          send_unicode_hex_string("005D");
+          send_unicode_string("]");
         }
         return false;
         break;
       case QUARTER: /* ¼ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00BC");
+          send_unicode_string("¼");
         }
         return false;
         break;
       case PI: /* π */
         if (record->event.pressed) {
-          send_unicode_hex_string("03C0");
+          send_unicode_string("π");
         }
         return false;
         break;
       case EURO: /* € */
         if (record->event.pressed) {
-          send_unicode_hex_string("20AC");
+          send_unicode_string("€");
         }
         return false;
         break;
       case HALF: /* ½ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00BD");
+          send_unicode_string("½");
         }
         return false;
         break;
       case EMDASH: /* — */
         if (record->event.pressed) {
-          send_unicode_hex_string("2014");
+          send_unicode_string("—");
         }
         return false;
         break;
       case THREEQUARTERS: /* ¾ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00BE");
+          send_unicode_string("¾");
         }
         return false;
         break;
       case INFINITY: /* ∞ */
         if (record->event.pressed) {
-          send_unicode_hex_string("221E");
+          send_unicode_string("∞");
         }
         return false;
         break;
       case LCRBR: /* { */
         if (record->event.pressed) {
-          send_unicode_hex_string("007B");
+          send_unicode_string("{");
         }
         return false;
         break;
       case RCRBR: /* } */
         if (record->event.pressed) {
-          send_unicode_hex_string("007D");
+          send_unicode_string("}");
         }
         return false;
         break;
       case REGTM: /* ® */
         if (record->event.pressed) {
-          send_unicode_hex_string("00AE");
+          send_unicode_string("®");
         }
         return false;
         break;
       case TM: /* ™ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2122");
+          send_unicode_string("™");
         }
         return false;
         break;
       case MICRO: /* µ */
         if (record->event.pressed) {
-          send_unicode_hex_string("00B5");
+          send_unicode_string("µ");
         }
         return false;
         break;
       case RING_SM_A: /* å */
         if (record->event.pressed) {
-          send_unicode_hex_string("00E5");
+          send_unicode_string("å");
         }
         return false;
         break;
       case RING_BG_A: /* Å */
         if (record->event.pressed) {
-          send_unicode_hex_string("00C5");
+          send_unicode_string("Å");
         }
         return false;
         break;
       case DELTA: /* Δ */
         if (record->event.pressed) {
-          send_unicode_hex_string("0394");
+          send_unicode_string("Δ");
         }
         return false;
         break;
       case HAMMER: /* ☭ */
         if (record->event.pressed) {
-          send_unicode_hex_string("262D");
+          send_unicode_string("☭");
         }
         return false;
         break;
       case UML_SM_O: /* ö */
         if (record->event.pressed) {
-          send_unicode_hex_string("00F6");
+          send_unicode_string("ö");
         }
         return false;
         break;
       case UML_BG_O: /* Ö */
         if (record->event.pressed) {
-          send_unicode_hex_string("00D6");
+          send_unicode_string("Ö");
         }
         return false;
         break;
       case UML_SM_A: /* ä */
         if (record->event.pressed) {
-          send_unicode_hex_string("00E4");
+          send_unicode_string("ä");
         }
         return false;
         break;
       case UML_BG_A: /* Ä */
         if (record->event.pressed) {
-          send_unicode_hex_string("00C4");
+          send_unicode_string("Ä");
         }
         return false;
         break;
       case CORRECTCHECK: /* ✓ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2713");
+          send_unicode_string("✓");
         }
         return false;
         break;
       case WRONGX: /* ✗ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2717");
+          send_unicode_string("✗");
         }
         return false;
         break;
       case CPYRT: /* © */
         if (record->event.pressed) {
-          send_unicode_hex_string("00A9");
+          send_unicode_string("©");
         }
         return false;
         break;
       case TILDE: /* ~ */
         if (record->event.pressed) {
-          send_unicode_hex_string("007E");
+          send_unicode_string("~");
         }
         return false;
         break;
       case GRAVE: /* ` */
         if (record->event.pressed) {
-          send_unicode_hex_string("0060");
+          send_unicode_string("`");
         }
         return false;
         break;
       case COMMA: /* , */
         if (record->event.pressed) {
-          send_unicode_hex_string("002C");
+          send_unicode_string(",");
         }
         return false;
         break;
       case SEMICOLON: /* ; */
         if (record->event.pressed) {
-          send_unicode_hex_string("003B");
+          send_unicode_string(";");
         }
         return false;
         break;
       case LESSTHAN: /* < */
         if (record->event.pressed) {
-          send_unicode_hex_string("003C");
+          send_unicode_string("<");
         }
         return false;
         break;
       case LESSTHANEQUAL: /* ≤ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2264");
+          send_unicode_string("≤");
         }
         return false;
         break;
       case PERIOD: /* . */
         if (record->event.pressed) {
-          send_unicode_hex_string("002E");
+          send_unicode_string(".");
         }
         return false;
         break;
       case COLON: /* : */
         if (record->event.pressed) {
-          send_unicode_hex_string("003A");
+          send_unicode_string(":");
         }
         return false;
         break;
       case GREATERTHAN: /* > */
         if (record->event.pressed) {
-          send_unicode_hex_string("003E");
+          send_unicode_string(">");
         }
         return false;
         break;
       case GREATERTHANEQUAL: /* ≥ */
         if (record->event.pressed) {
-          send_unicode_hex_string("2265");
+          send_unicode_string("≥");
         }
         return false;
         break;
       case BACKSLASH:
       if (record->event.pressed) {
-          send_unicode_hex_string("005C");
+          send_unicode_string("\\");
         }
         return false;
         break;
@@ -354,7 +354,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_DIVIDE: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(SQRT);
+              send_unicode_string("√");
             } else {
               send_unicode_string("/");
             }
@@ -365,9 +365,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_COMMA: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(COLON);
+              send_unicode_string(":");
             } else {
-              send_unicode_hex_string(COMMA);
+              send_unicode_string(",");
             }
           }
           return false;
@@ -376,9 +376,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_PERIOD: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(SEMICOLON);
+              send_unicode_string(";");
             } else {
-              send_unicode_hex_string(PERIOD);
+              send_unicode_string(".");
             }
           }
           return false;
@@ -387,9 +387,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_POW2: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(QUARTER);
+              send_unicode_string("¼");
             } else {
-              send_unicode_hex_string(POWER2);
+              send_unicode_string("²");
             }
           }
           return false;
@@ -398,9 +398,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_POW3: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(PI);
+              send_unicode_string("π");
             } else {
-              send_unicode_hex_string(POWER3);
+              send_unicode_string("³");
             }
           }
           return false;
@@ -409,12 +409,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_CENTS: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(EURO);
+              send_unicode_string("€");
             } else {
-              send_unicode_hex_string(CENTS);
+              send_unicode_string("¢");
             }
-          } else { // Release the key
-            send_unicode_hex_string(CENTS);
           }
           return false;
           break;
@@ -422,9 +420,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_PIPE: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(HALF);
+              send_unicode_string("½");
             } else {
-              send_unicode_hex_string(PIPE);
+              send_unicode_string("|");
             }
           }
           return false;
@@ -433,9 +431,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_HYPHEN: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(EMDASH);
+              send_unicode_string("—");
             } else {
-              send_unicode_hex_string(DASH);
+              send_unicode_string("‐");
             }
           }
           return false;
@@ -444,9 +442,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_TILDE: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(THREEQUARTERS);
+              send_unicode_string("¾");
             } else {
-              send_unicode_hex_string(TILDE);
+              send_unicode_string("~");
             }
           }
           return false;
@@ -455,9 +453,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_DEGREE: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(INFINITY);
+              send_unicode_string("∞");
             } else {
-              send_unicode_hex_string(DEGREE);
+              send_unicode_string("°");
             }
           }
           return false;
@@ -466,9 +464,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_LSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(LCRBR);
+              send_unicode_string("{");
             } else {
-              send_unicode_hex_string(LSQBR);
+              send_unicode_string("[");
             }
           }
           return false;
@@ -477,9 +475,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_RSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(RCRBR);
+              send_unicode_string("}");
             } else {
-              send_unicode_hex_string(RSQBR);
+              send_unicode_string("]");
             }
           }
           return false;
@@ -488,9 +486,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_RING_A: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(RING_BG_A);
+              send_unicode_string("Å");
             } else {
-              send_unicode_hex_string(RING_SM_A);
+              send_unicode_string("å");
             }
           }
           return false;
@@ -499,9 +497,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_UML_O: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(UML_BG_O);
+              send_unicode_string("Ö");
             } else {
-              send_unicode_hex_string(UML_SM_O);
+              send_unicode_string("ö");
             }
           }
           return false;
@@ -510,9 +508,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_UML_A: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(UML_BG_A);
+              send_unicode_string("Ä");
             } else {
-              send_unicode_hex_string(UML_SM_A);
+              send_unicode_string("ä");
             }
           }
           return false;
@@ -521,9 +519,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_LESSTHAN: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(LESSTHANEQUAL);
+              send_unicode_string("≤");
             } else {
-              send_unicode_hex_string(LESSTHAN);
+              send_unicode_string("<");
             }
           }
           return false;
@@ -532,9 +530,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_GREATERTHAN: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(GREATERTHANEQUAL);
+              send_unicode_string("≥");
             } else {
-              send_unicode_hex_string(GREATERTHAN);
+              send_unicode_string(">");
             }
           }
           return false;
@@ -543,9 +541,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_BACKSLASH: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_hex_string(BANG);
+              send_unicode_string("‽");
             } else {
-              send_unicode_hex_string(BACKSLASH);
+              send_unicode_string("\\");
             }
           }
           return false;

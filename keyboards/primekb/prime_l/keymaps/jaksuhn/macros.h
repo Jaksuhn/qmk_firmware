@@ -77,6 +77,5 @@ enum custom_keycodes {
   SFT_UML_A,
   SFT_LESSTHAN,
   SFT_GREATERTHAN,
-  SFT_BACKSLASH,
-  NEW_SAFE_RANGE
+  SFT_BACKSLASH
 };
