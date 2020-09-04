@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
-#include "keymap.h"
+#include "prime_uni.h"
 
 /*
 enum unicode_names {
