@@ -354,18 +354,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_DIVIDE: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(SQRT);
+              send_unicode_hex_string(SQRT);
             } else {
-              register_code(KC_LSFT);
-              register_code(KC_KP_SLASH);
+              send_unicode_string("/");
             }
-          } else { // Release the key
-            unregister_code(SQRT);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(KC_KP_SLASH);
           }
           return false;
           break;
@@ -373,18 +365,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_COMMA: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(COLON);
+              send_unicode_hex_string(COLON);
             } else {
-              register_code(KC_LSFT);
-              register_code(COMMA);
+              send_unicode_hex_string(COMMA);
             }
-          } else { // Release the key
-            unregister_code(COLON);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(COMMA);
           }
           return false;
           break;
@@ -392,18 +376,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_PERIOD: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(SEMICOLON);
+              send_unicode_hex_string(SEMICOLON);
             } else {
-              register_code(KC_LSFT);
-              register_code(PERIOD);
+              send_unicode_hex_string(PERIOD);
             }
-          } else { // Release the key
-            unregister_code(SEMICOLON);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(PERIOD);
           }
           return false;
           break;
@@ -411,18 +387,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_POW2: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(QUARTER);
+              send_unicode_hex_string(QUARTER);
             } else {
-              register_code(KC_LSFT);
-              register_code(POWER2);
+              send_unicode_hex_string(POWER2);
             }
-          } else { // Release the key
-            unregister_code(QUARTER);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(POWER2);
           }
           return false;
           break;
@@ -430,18 +398,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_POW3: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(PI);
+              send_unicode_hex_string(PI);
             } else {
-              register_code(KC_LSFT);
-              register_code(POWER3);
+              send_unicode_hex_string(POWER3);
             }
-          } else { // Release the key
-            unregister_code(PI);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(POWER3);
           }
           return false;
           break;
@@ -449,18 +409,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_CENTS: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(EURO);
+              send_unicode_hex_string(EURO);
             } else {
-              register_code(KC_LSFT);
-              register_code(CENTS);
+              send_unicode_hex_string(CENTS);
             }
           } else { // Release the key
-            unregister_code(EURO);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(CENTS);
+            send_unicode_hex_string(CENTS);
           }
           return false;
           break;
@@ -468,18 +422,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_PIPE: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(HALF);
+              send_unicode_hex_string(HALF);
             } else {
-              register_code(KC_LSFT);
-              register_code(PIPE);
+              send_unicode_hex_string(PIPE);
             }
-          } else { // Release the key
-            unregister_code(HALF);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(PIPE);
           }
           return false;
           break;
@@ -487,18 +433,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_HYPHEN: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(EMDASH);
+              send_unicode_hex_string(EMDASH);
             } else {
-              register_code(KC_LSFT);
-              register_code(DASH);
+              send_unicode_hex_string(DASH);
             }
-          } else { // Release the key
-            unregister_code(EMDASH);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(DASH);
           }
           return false;
           break;
@@ -506,18 +444,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_TILDE: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(THREEQUARTERS);
+              send_unicode_hex_string(THREEQUARTERS);
             } else {
-              register_code(KC_LSFT);
-              register_code(TILDE);
+              send_unicode_hex_string(TILDE);
             }
-          } else { // Release the key
-            unregister_code(THREEQUARTERS);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(TILDE);
           }
           return false;
           break;
@@ -525,18 +455,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_DEGREE: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(INFINITY);
+              send_unicode_hex_string(INFINITY);
             } else {
-              register_code(KC_LSFT);
-              register_code(DEGREE);
+              send_unicode_hex_string(DEGREE);
             }
-          } else { // Release the key
-            unregister_code(INFINITY);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(DEGREE);
           }
           return false;
           break;
@@ -544,18 +466,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_LSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(LCRBR);
+              send_unicode_hex_string(LCRBR);
             } else {
-              register_code(KC_LSFT);
-              register_code(LSQBR);
+              send_unicode_hex_string(LSQBR);
             }
-          } else { // Release the key
-            unregister_code(LCRBR);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(LSQBR);
           }
           return false;
           break;
@@ -563,18 +477,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_RSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(RCRBR);
+              send_unicode_hex_string(RCRBR);
             } else {
-              register_code(KC_LSFT);
-              register_code(RSQBR);
+              send_unicode_hex_string(RSQBR);
             }
-          } else { // Release the key
-            unregister_code(RCRBR);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(RSQBR);
           }
           return false;
           break;
@@ -582,18 +488,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_RING_A: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(RING_BG_A);
+              send_unicode_hex_string(RING_BG_A);
             } else {
-              register_code(KC_LSFT);
-              register_code(RING_SM_A);
+              send_unicode_hex_string(RING_SM_A);
             }
-          } else { // Release the key
-            unregister_code(RING_BG_A);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(RING_SM_A);
           }
           return false;
           break;
@@ -601,18 +499,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_UML_O: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(UML_BG_O);
+              send_unicode_hex_string(UML_BG_O);
             } else {
-              register_code(KC_LSFT);
-              register_code(UML_SM_O);
+              send_unicode_hex_string(UML_SM_O);
             }
-          } else { // Release the key
-            unregister_code(UML_BG_O);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(UML_SM_O);
           }
           return false;
           break;
@@ -620,18 +510,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_UML_A: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(UML_BG_A);
+              send_unicode_hex_string(UML_BG_A);
             } else {
-              register_code(KC_LSFT);
-              register_code(UML_SM_A);
+              send_unicode_hex_string(UML_SM_A);
             }
-          } else { // Release the key
-            unregister_code(UML_BG_A);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(UML_SM_A);
           }
           return false;
           break;
@@ -639,18 +521,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_LESSTHAN: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(LESSTHANEQUAL);
+              send_unicode_hex_string(LESSTHANEQUAL);
             } else {
-              register_code(KC_LSFT);
-              register_code(LESSTHAN);
+              send_unicode_hex_string(LESSTHAN);
             }
-          } else { // Release the key
-            unregister_code(LESSTHANEQUAL);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(LESSTHAN);
           }
           return false;
           break;
@@ -658,18 +532,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_GREATERTHAN: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(GREATERTHANEQUAL);
+              send_unicode_hex_string(GREATERTHANEQUAL);
             } else {
-              register_code(KC_LSFT);
-              register_code(GREATERTHAN);
+              send_unicode_hex_string(GREATERTHAN);
             }
-          } else { // Release the key
-            unregister_code(GREATERTHANEQUAL);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(GREATERTHAN);
           }
           return false;
           break;
@@ -677,18 +543,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_BACKSLASH: {
           if (record->event.pressed) {
             if (shift_held) {
-              unregister_code(KC_LSFT);
-              unregister_code(KC_RSFT);
-              register_code(BANG);
+              send_unicode_hex_string(BANG);
             } else {
-              register_code(KC_LSFT);
-              register_code(BACKSLASH);
+              send_unicode_hex_string(BACKSLASH);
             }
-          } else { // Release the key
-            unregister_code(BANG);
-            unregister_code(KC_LSFT);
-            unregister_code(KC_RSFT);
-            unregister_code(BACKSLASH);
           }
           return false;
           break;
