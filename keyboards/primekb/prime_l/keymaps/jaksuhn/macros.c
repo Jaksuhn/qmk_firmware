@@ -365,7 +365,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_COMMA: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_string(":");
+              send_unicode_string(";");
             } else {
               send_unicode_string(",");
             }
@@ -376,7 +376,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_PERIOD: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_string(";");
+              send_unicode_string(":");
             } else {
               send_unicode_string(".");
             }

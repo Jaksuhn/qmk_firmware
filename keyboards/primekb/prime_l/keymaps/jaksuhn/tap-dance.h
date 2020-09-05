@@ -3,6 +3,8 @@
 #include "quantum.h"
 
 enum tap_dance {
-  TD_SHIFT_CAPS = 0,
-  TD_COMMA_SCOLON = 1
+    TD_RESET = 0,
+    TD_SHIFT_CAPS = 1,
+    TD_COMMA_SCOLON = 2,
+    TD_DOT_COLON = 3
 };
