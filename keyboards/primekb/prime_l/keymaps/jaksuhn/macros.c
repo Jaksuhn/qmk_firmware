@@ -293,7 +293,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         return false;
         break;
-      case BACKSLASH:
+      case BACKSLASH: /* \\ */
       if (record->event.pressed) {
           send_unicode_string("\\");
         }
@@ -464,9 +464,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_LSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_string("{");
-            } else {
               send_unicode_string("[");
+            } else {
+              send_unicode_string("{");
             }
           }
           return false;
@@ -475,9 +475,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case SFT_RSQBR: {
           if (record->event.pressed) {
             if (shift_held) {
-              send_unicode_string("}");
-            } else {
               send_unicode_string("]");
+            } else {
+              send_unicode_string("}");
             }
           }
           return false;
