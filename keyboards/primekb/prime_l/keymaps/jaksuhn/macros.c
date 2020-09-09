@@ -666,17 +666,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           return false;
           break;
         }
-        case SFT_BACKSLASH: {
-          if (record->event.pressed) {
-            if (shift_held) {
-              send_unicode_string("‽");
-            } else {
-              send_unicode_string("\\");
-            }
-          }
-          return false;
-          break;
-        }
         case SFT_POWER1: {
           if (record->event.pressed) {
             if (shift_held) {

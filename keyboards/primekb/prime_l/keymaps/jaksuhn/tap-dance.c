@@ -20,5 +20,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     /* Tap once for left curly brace, twice for left square brace */
     [TD_LEFT_BRACE] = ACTION_TAP_DANCE_DOUBLE(RSFT(KC_LBRACKET), KC_LBRACKET),
     /* Tap once for right curly brace, twice for right square brace */
-    [TD_RIGHT_BRACE] = ACTION_TAP_DANCE_DOUBLE(RSFT(KC_RBRACKET), KC_RBRACKET)
+    [TD_RIGHT_BRACE] = ACTION_TAP_DANCE_DOUBLE(RSFT(KC_RBRACKET), KC_RBRACKET),
+    /* Tap once for forward slash, twice for backslash */
+    [TD_SLASHES] = ACTION_TAP_DANCE_DOUBLE(KC_SLASH, KC_BSLASH)
 };
