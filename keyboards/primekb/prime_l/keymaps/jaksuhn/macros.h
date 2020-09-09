@@ -5,35 +5,20 @@
 
 enum custom_keycodes {
   BANG = SAFE_RANGE, /* ‽ */
-  PLUSMINUS, /* ± */
-  MULTIPLYX, /* × */
-  OBELUS, /* ÷ */
-  SQRT, /* √ */
-  NOTEQUAL, /* ≠ */
-  POWER1, /* ¹ */
-  POWER2, /* ² */
-  POWER3, /* ³ */
   CENTS, /* ¢ */
   PIPE, /* | */
   DASH, /* ‐ */
   DEGREE, /* ° */
   LSQBR, /* [ */
   RSQBR, /* ] */
-  QUARTER, /* ¼ */
-  PI, /* π */
   EURO, /* € */
-  HALF, /* ½ */
   EMDASH, /* — */
-  THREEQUARTERS, /* ¾ */
-  INFIN, /* ∞ */
   LCRBR, /* { */
   RCRBR, /* } */
   REGTM, /* ® */
   TM, /* ™ */
-  MICRO, /* µ */
   RING_SM_A, /* å */
   RING_BG_A, /* Å */
-  DELTA, /* Δ */
   HAMMER, /* ☭ */
   UML_SM_O, /* ö */
   UML_BG_O, /* Ö */
@@ -47,12 +32,56 @@ enum custom_keycodes {
   COMMA, /* , */
   SEMICOLON, /* ; */
   LESSTHAN, /* < */
-  LESSTHANEQUAL, /* ≤ */
   PERIOD, /* . */
   COLON, /* : */
   GREATERTHAN, /* > */
+  BACKSLASH, /* \ */
+  PLUSMINUS, /* ± */
+  MINUSPLUS, /* ∓ */
+  MULTIPLYX, /* × */
+  OBELUS, /* ÷ */
+  SQRT, /* √ */
+  NOTEQUAL, /* ≠ */
+  APPROX, /* ≈ */
+  POWER1, /* ¹ */
+  POWER2, /* ² */
+  POWER3, /* ³ */
+  POWER4, /* ⁴ */
+  POWER5, /* ⁵ */
+  POWER6, /* ⁶ */
+  POWER7, /* ⁷ */
+  POWER8, /* ⁸ */
+  POWER9, /* ⁹ */
+  POWER0, /* ⁰ */
+  QUARTER, /* ¼ */
+  HALF, /* ½ */
+  THREEQUARTERS, /* ¾ */
+  THIRD, /* ⅓ */
+  TWOTHIRDS, /* ⅔ */
+  FIFTH, /* ⅕ */
+  TWOFITHS, /* ⅖ */
+  THREEFIFTHS, /* ⅗ */
+  FOURFIFTHS, /* ⅘ */
+  EXISTS, /* ∃ */
+  REALNUM, /* ℝ */
+  PI, /* π */
+  INFIN, /* ∞ */
+  MICRO, /* µ */
+  FORALL, /* ∀ */
+  SIGMA, /* σ */
+  SUMMATION, /* ∑ */
+  DELTA, /* Δ */
+  NABLA, /* ∇ */
+  ELEMENTOF, /* ∈ */
+  NOTELEMENTOF, /* ∉ */
+  CONTAINS, /* ∋ */
+  NOTCONTAINS, /* ∌ */
+  UNION, /* ∪ */
+  NOTUNION, /* ∩ */
+  LOGICOR, /* ∨ */
+  LOGICAND, /* ∧ */
+  LESSTHANEQUAL, /* ≤ */
   GREATERTHANEQUAL, /* ≥ */
-  BACKSLASH,
   LENNY, /* ( ͡° ͜ʖ ͡°) */
   SHRUG, /* ¯\_(ツ)_/¯ */
   TFLIP, /* (╯°□°)╯︵ ┻━┻ */
@@ -60,16 +89,11 @@ enum custom_keycodes {
   AMENO, /* ༼ つ ◕_◕ ༽つ */
   MAGIC, /* (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * */
   TPUT, /* ┬──┬ ノ( ゜-゜ノ) */
-  SFT_DIVIDE,
+  ZOOP, /* (☞ﾟヮﾟ)☞ */
   SFT_COMMA,
   SFT_PERIOD,
-  SFT_POW2,
-  SFT_POW3,
   SFT_CENTS,
-  SFT_PIPE,
   SFT_HYPHEN,
-  SFT_TILDE,
-  SFT_DEGREE,
   SFT_LSQBR,
   SFT_RSQBR,
   SFT_RING_A,
@@ -77,5 +101,23 @@ enum custom_keycodes {
   SFT_UML_A,
   SFT_LESSTHAN,
   SFT_GREATERTHAN,
-  SFT_BACKSLASH
+  SFT_BACKSLASH,
+  SFT_DIVIDE,
+  SFT_POWER1,
+  SFT_POWER2,
+  SFT_POWER3,
+  SFT_POWER4,
+  SFT_POWER5,
+  SFT_POWER6,
+  SFT_POWER7,
+  SFT_POWER8,
+  SFT_POWER9,
+  SFT_POWER0,
+  SFT_NOTEQUAL,
+  SFT_SIGMA,
+  SFT_DELTA,
+  SFT_ELEMENT,
+  SFT_CONTAINS,
+  SFT_UNION,
+  SFT_LOGIC
 };
