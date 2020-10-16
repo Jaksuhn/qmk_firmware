@@ -28,7 +28,7 @@ enum layer_names {
 };
 
 enum keymap_custom_keycodes {
-    UNICODE = SAFE_RANGE,
+    RAISE = SAFE_RANGE,
     FN
 };
 
