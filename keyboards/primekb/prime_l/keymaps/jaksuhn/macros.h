@@ -5,16 +5,11 @@
 
 enum custom_keycodes {
   BANG = SAFE_RANGE, /* ‽ */
-  CENTS, /* ¢ */
   PIPE, /* | */
-  DASH, /* ‐ */
   DEGREE, /* ° */
-  LSQBR, /* [ */
-  RSQBR, /* ] */
+  CENTS, /* ¢ */
   EURO, /* € */
-  EMDASH, /* — */
-  LCRBR, /* { */
-  RCRBR, /* } */
+  POUND, /* £ */
   REGTM, /* ® */
   TM, /* ™ */
   RING_SM_A, /* å */
@@ -27,15 +22,9 @@ enum custom_keycodes {
   CORRECTCHECK, /* ✓ */
   WRONGX, /* ✗ */
   CPYRT, /* © */
-  TILDE, /* ~ */
   GRAVE, /* ` */
-  COMMA, /* , */
-  SEMICOLON, /* ; */
-  LESSTHAN, /* < */
-  PERIOD, /* . */
-  COLON, /* : */
-  GREATERTHAN, /* > */
-  BACKSLASH, /* \ */
+  NUMERO, /* № */
+  MENACING, /* ゴ */
   PLUSMINUS, /* ± */
   MINUSPLUS, /* ∓ */
   MULTIPLYX, /* × */
@@ -64,13 +53,8 @@ enum custom_keycodes {
   FOURFIFTHS, /* ⅘ */
   EXISTS, /* ∃ */
   REALNUM, /* ℝ */
-  PI, /* π */
   INFIN, /* ∞ */
-  MICRO, /* µ */
   FORALL, /* ∀ */
-  SIGMA, /* σ */
-  SUMMATION, /* ∑ */
-  DELTA, /* Δ */
   NABLA, /* ∇ */
   ELEMENTOF, /* ∈ */
   NOTELEMENTOF, /* ∉ */
@@ -80,6 +64,9 @@ enum custom_keycodes {
   NOTUNION, /* ∩ */
   LOGICOR, /* ∨ */
   LOGICAND, /* ∧ */
+  LOGICNOT, /* ¬ */
+  IFTHEN, /* → */
+  IFONLYIF, /* ⇔ */
   LESSTHANEQUAL, /* ≤ */
   GREATERTHANEQUAL, /* ≥ */
   LENNY, /* ( ͡° ͜ʖ ͡°) */
@@ -90,17 +77,9 @@ enum custom_keycodes {
   MAGIC, /* (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * */
   TPUT, /* ┬──┬ ノ( ゜-゜ノ) */
   ZOOP, /* (☞ﾟヮﾟ)☞ */
-  SFT_COMMA,
-  SFT_PERIOD,
-  SFT_CENTS,
-  SFT_HYPHEN,
-  SFT_LSQBR,
-  SFT_RSQBR,
   SFT_RING_A,
   SFT_UML_O,
   SFT_UML_A,
-  SFT_LESSTHAN,
-  SFT_GREATERTHAN,
   SFT_DIVIDE,
   SFT_POWER1,
   SFT_POWER2,
@@ -113,10 +92,32 @@ enum custom_keycodes {
   SFT_POWER9,
   SFT_POWER0,
   SFT_NOTEQUAL,
-  SFT_SIGMA,
-  SFT_DELTA,
   SFT_ELEMENT,
   SFT_CONTAINS,
   SFT_UNION,
-  SFT_LOGIC
+  SFT_LOGIC,
+  SFT_GR_EPSL, /* Ε */
+  SFT_GR_RHO, /* Ρ */
+  SFT_GR_TAU, /* Τ */
+  SFT_GR_UPSL, /* Υ */
+  SFT_GR_THET, /* Θ */
+  SFT_GR_IOTA, /* Ι */
+  SFT_GR_OMCR, /* Ο */
+  SFT_GR_PI, /* Π */
+  SFT_GR_ALPH, /* Α */
+  SFT_GR_SIGM, /* Σ */
+  SFT_GR_DELT, /* Δ */
+  SFT_GR_PHI, /* Φ */
+  SFT_GR_GAMM, /* Γ */
+  SFT_GR_ETA, /* Η */
+  SFT_GR_XI, /* Ξ */
+  SFT_GR_KAPP, /* Κ */
+  SFT_GR_LAMB, /* Λ */
+  SFT_GR_ZETA, /* Ζ */
+  SFT_GR_CHI, /* Χ */
+  SFT_GR_PSI, /* Ψ */
+  SFT_GR_OMEG, /* Ω */
+  SFT_GR_BETA, /* Β */
+  SFT_GR_NU, /* Ν */
+  SFT_GR_MU /* Μ */
 };
